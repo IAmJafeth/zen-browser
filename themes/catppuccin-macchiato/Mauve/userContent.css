@@ -1,0 +1,43 @@
+@-moz-document url("about:newtab"), url("about:home") {
+	:root{
+	--newtab-background-color: #24273a !important;
+	--newtab-background-color-secondary: #363a4f !important;
+	--newtab-element-hover-color: #363a4f !important;
+	--newtab-text-primary-color: #cad3f5 !important;
+	--newtab-wordmark-color: #cad3f5 !important;
+	}
+	
+  .icon{
+  color: #c6a0f6 !important;
+  }
+  
+  body { 
+  background-color: #24273a !important;
+  }
+ 
+}
+
+@-moz-document url("about:preferences"), url("about:preferences/*") {
+	:root{
+	--zen-colors-tertiary: #1e2030 !important;
+	--in-content-text-color: #cad3f5 !important;
+	--link-color: #c6a0f6 !important;
+	--link-color-hover: rgb(242, 160, 246) !important;
+	}
+	
+	groupbox{
+	background: #24273a !important;
+  }
+  
+  groupbox button, groupbox menulist {
+  background: #363a4f !important;
+  color: #cad3f5 !important;
+  }
+  
+  .main-content{
+  background-color: #181926 !important;
+  }
+ 
+}
+
+
