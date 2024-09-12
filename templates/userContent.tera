@@ -50,4 +50,15 @@ whiskers:
  
 }
 
+@-moz-document url("about:addons") {
+	:root{
+    --zen-dark-color-mix-base: #{{ mantle.hex }} !important;
+    --in-content-page-color: #{{ text.hex }} !important;
+    --background-color-box: #{{ base.hex }} !important;
+    --color-accent-primary: #{{ palette[accent].hex }} !important;
+    --color-accent-primary-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
+	}
+ 
+}
+
 

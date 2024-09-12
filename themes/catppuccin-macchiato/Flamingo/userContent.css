@@ -40,4 +40,15 @@
  
 }
 
+@-moz-document url("about:addons") {
+	:root{
+    --zen-dark-color-mix-base: #1e2030 !important;
+    --in-content-page-color: #cad3f5 !important;
+    --background-color-box: #24273a !important;
+    --color-accent-primary: #f0c6c6 !important;
+    --color-accent-primary-hover: rgb(240, 219, 198) !important;
+	}
+ 
+}
+
 
