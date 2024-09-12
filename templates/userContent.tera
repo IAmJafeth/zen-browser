@@ -1,0 +1,53 @@
+---
+whiskers:
+    version: 2.5.0
+    matrix:
+        - accent
+        - flavor
+    filename: "themes/catppuccin-{{ flavor.identifier }}/{{ accent | capitalize }}/userContent.css"
+---
+{%- set palette = flavor.colors -%}
+
+@-moz-document url("about:newtab"), url("about:home") {
+	:root{
+	--newtab-background-color: #{{ base.hex }} !important;
+	--newtab-background-color-secondary: #{{ surface0.hex }} !important;
+	--newtab-element-hover-color: #{{ surface0.hex }} !important;
+	--newtab-text-primary-color: #{{ text.hex }} !important;
+	--newtab-wordmark-color: #{{ text.hex }} !important;
+	}
+	
+  .icon{
+  color: #{{ palette[accent].hex }} !important;
+  }
+  
+  body { 
+  background-color: #{{ base.hex }} !important;
+  }
+ 
+}
+
+@-moz-document url("about:preferences"), url("about:preferences/*") {
+	:root{
+	--zen-colors-tertiary: #{{ mantle.hex }} !important;
+	--in-content-text-color: #{{ text.hex }} !important;
+	--link-color: #{{ palette[accent].hex }} !important;
+	--link-color-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
+	}
+	
+	groupbox{
+	background: #{{ base.hex }} !important;
+  }
+  
+  groupbox button, groupbox menulist {
+  background: #{{ surface0.hex }} !important;
+  color: #{{ text.hex }} !important;
+  }
+  
+  .main-content{
+  background-color: #{{ crust.hex }} !important;
+  }
+ 
+}
+
+
