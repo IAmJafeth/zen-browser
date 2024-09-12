@@ -14,6 +14,10 @@
   body { 
   background-color: #303446 !important;
   }
+
+  .logo {
+    background-image: url("zen-logo.svg") !important;
+  }
  
 }
 

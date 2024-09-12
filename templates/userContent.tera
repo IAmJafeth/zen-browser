@@ -24,6 +24,10 @@ whiskers:
   body { 
   background-color: #{{ base.hex }} !important;
   }
+
+  .logo {
+    background-image: url("zen-logo.svg") !important;
+  }
  
 }
 
