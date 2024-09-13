@@ -35,6 +35,18 @@
       }
     }
 
+    .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title{
+      color: #dc8a78 !important;
+    }
+
+    .top-site-outer .search-topsite{
+      background-color: #1e66f5 !important;
+    }
+
+    .compact-cards .card-outer .card-context .card-context-icon.icon-download{
+      fill: #40a02b !important;
+    }
+
   }
   
 

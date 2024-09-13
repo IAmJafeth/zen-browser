@@ -45,6 +45,18 @@ whiskers:
       }
     }
 
+    .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title{
+      color: #{{ palette[accent].hex }} !important;
+    }
+
+    .top-site-outer .search-topsite{
+      background-color: #{{ blue.hex }} !important;
+    }
+
+    .compact-cards .card-outer .card-context .card-context-icon.icon-download{
+      fill: #{{ green.hex }} !important;
+    }
+
   }
   
 
