@@ -8,61 +8,61 @@ whiskers:
 ---
 {%- set palette = flavor.colors -%}
 
-@-moz-document url("about:newtab"), url("about:home") {
-	:root{
-	--newtab-background-color: #{{ base.hex }} !important;
-	--newtab-background-color-secondary: #{{ surface0.hex }} !important;
-	--newtab-element-hover-color: #{{ surface0.hex }} !important;
-	--newtab-text-primary-color: #{{ text.hex }} !important;
-	--newtab-wordmark-color: #{{ text.hex }} !important;
-	}
-	
-  .icon{
-  color: #{{ palette[accent].hex }} !important;
-  }
-  
-  body { 
-  background-color: #{{ base.hex }} !important;
+/* Catppuccin {{flavor.identifier | capitalize}} {{accent | capitalize}} userCotent.css*/
+
+@media (prefers-color-scheme: {{ if(cond=flavor.dark, t="dark", f="light") }}) {
+  @-moz-document url("about:newtab"), url("about:home") {
+    :root{
+    --newtab-background-color: #{{ base.hex }} !important;
+    --newtab-background-color-secondary: #{{ surface0.hex }} !important;
+    --newtab-element-hover-color: #{{ surface0.hex }} !important;
+    --newtab-text-primary-color: #{{ text.hex }} !important;
+    --newtab-wordmark-color: #{{ text.hex }} !important;
+    }
+    
+    .icon{
+    color: #{{ palette[accent].hex }} !important;
+    }
+    
+    body { 
+    background-color: #{{ base.hex }} !important;
+    }
+
+    .logo {
+      background-image: url("zen-logo.svg") !important;
+    }
   }
 
-  .logo {
-    background-image: url("zen-logo.svg") !important;
+  @-moz-document url("about:preferences"), url("about:preferences/*") {
+    :root{
+    --zen-colors-tertiary: #{{ mantle.hex }} !important;
+    --in-content-text-color: #{{ text.hex }} !important;
+    --link-color: #{{ palette[accent].hex }} !important;
+    --link-color-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
+    }
+    
+    groupbox{
+    background: #{{ base.hex }} !important;
+    }
+    
+    groupbox button, groupbox menulist {
+    background: #{{ surface0.hex }} !important;
+    color: #{{ text.hex }} !important;
+    }
+    
+    .main-content{
+    background-color: #{{ crust.hex }} !important;
+    }
   }
- 
+
+  @-moz-document url("about:addons") {
+    :root{
+      --zen-dark-color-mix-base: #{{ mantle.hex }} !important;
+      --in-content-page-color: #{{ text.hex }} !important;
+      --background-color-box: #{{ base.hex }} !important;
+      --color-accent-primary: #{{ palette[accent].hex }} !important;
+      --color-accent-primary-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
+    }
+  }
 }
-
-@-moz-document url("about:preferences"), url("about:preferences/*") {
-	:root{
-	--zen-colors-tertiary: #{{ mantle.hex }} !important;
-	--in-content-text-color: #{{ text.hex }} !important;
-	--link-color: #{{ palette[accent].hex }} !important;
-	--link-color-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
-	}
-	
-	groupbox{
-	background: #{{ base.hex }} !important;
-  }
-  
-  groupbox button, groupbox menulist {
-  background: #{{ surface0.hex }} !important;
-  color: #{{ text.hex }} !important;
-  }
-  
-  .main-content{
-  background-color: #{{ crust.hex }} !important;
-  }
- 
-}
-
-@-moz-document url("about:addons") {
-	:root{
-    --zen-dark-color-mix-base: #{{ mantle.hex }} !important;
-    --in-content-page-color: #{{ text.hex }} !important;
-    --background-color-box: #{{ base.hex }} !important;
-    --color-accent-primary: #{{ palette[accent].hex }} !important;
-    --color-accent-primary-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
-	}
- 
-}
-
 

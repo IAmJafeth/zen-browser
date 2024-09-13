@@ -1,58 +1,58 @@
-@-moz-document url("about:newtab"), url("about:home") {
-	:root{
-	--newtab-background-color: #eff1f5 !important;
-	--newtab-background-color-secondary: #ccd0da !important;
-	--newtab-element-hover-color: #ccd0da !important;
-	--newtab-text-primary-color: #4c4f69 !important;
-	--newtab-wordmark-color: #4c4f69 !important;
-	}
-	
-  .icon{
-  color: #e64553 !important;
-  }
-  
-  body { 
-  background-color: #eff1f5 !important;
+/* Catppuccin Latte Maroon userCotent.css*/
+
+@media (prefers-color-scheme: light) {
+  @-moz-document url("about:newtab"), url("about:home") {
+    :root{
+    --newtab-background-color: #eff1f5 !important;
+    --newtab-background-color-secondary: #ccd0da !important;
+    --newtab-element-hover-color: #ccd0da !important;
+    --newtab-text-primary-color: #4c4f69 !important;
+    --newtab-wordmark-color: #4c4f69 !important;
+    }
+    
+    .icon{
+    color: #e64553 !important;
+    }
+    
+    body { 
+    background-color: #eff1f5 !important;
+    }
+
+    .logo {
+      background-image: url("zen-logo.svg") !important;
+    }
   }
 
-  .logo {
-    background-image: url("zen-logo.svg") !important;
+  @-moz-document url("about:preferences"), url("about:preferences/*") {
+    :root{
+    --zen-colors-tertiary: #e6e9ef !important;
+    --in-content-text-color: #4c4f69 !important;
+    --link-color: #e64553 !important;
+    --link-color-hover: rgb(230, 137, 70) !important;
+    }
+    
+    groupbox{
+    background: #eff1f5 !important;
+    }
+    
+    groupbox button, groupbox menulist {
+    background: #ccd0da !important;
+    color: #4c4f69 !important;
+    }
+    
+    .main-content{
+    background-color: #dce0e8 !important;
+    }
   }
- 
+
+  @-moz-document url("about:addons") {
+    :root{
+      --zen-dark-color-mix-base: #e6e9ef !important;
+      --in-content-page-color: #4c4f69 !important;
+      --background-color-box: #eff1f5 !important;
+      --color-accent-primary: #e64553 !important;
+      --color-accent-primary-hover: rgb(230, 137, 70) !important;
+    }
+  }
 }
-
-@-moz-document url("about:preferences"), url("about:preferences/*") {
-	:root{
-	--zen-colors-tertiary: #e6e9ef !important;
-	--in-content-text-color: #4c4f69 !important;
-	--link-color: #e64553 !important;
-	--link-color-hover: rgb(230, 137, 70) !important;
-	}
-	
-	groupbox{
-	background: #eff1f5 !important;
-  }
-  
-  groupbox button, groupbox menulist {
-  background: #ccd0da !important;
-  color: #4c4f69 !important;
-  }
-  
-  .main-content{
-  background-color: #dce0e8 !important;
-  }
- 
-}
-
-@-moz-document url("about:addons") {
-	:root{
-    --zen-dark-color-mix-base: #e6e9ef !important;
-    --in-content-page-color: #4c4f69 !important;
-    --background-color-box: #eff1f5 !important;
-    --color-accent-primary: #e64553 !important;
-    --color-accent-primary-hover: rgb(230, 137, 70) !important;
-	}
- 
-}
-
 

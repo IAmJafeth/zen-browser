@@ -1,44 +1,48 @@
-:root {
-    --zen-colors-primary: #ccd0da !important;
-    --zen-colors-secondary: #ccd0da !important;
-    --zen-colors-tertiary: #e6e9ef !important;
-    --zen-colors-border: #04a5e5 !important;
-    --toolbarbutton-icon-fill: #04a5e5 !important;
-    --lwt-text-color: #4c4f69 !important;
-    --toolbar-field-color: #4c4f69 !important;
-    --tab-selected-textcolor: rgb(40, 122, 167) !important;
-    --toolbar-field-focus-color: #4c4f69 !important;
-    --toolbar-color: #4c4f69 !important;
-    --newtab-text-primary-color: #4c4f69 !important;
-    --arrowpanel-color: #4c4f69 !important;
-    --arrowpanel-background: #eff1f5 !important;
-    --sidebar-text-color: #4c4f69 !important;
-    --lwt-sidebar-text-color: #4c4f69 !important;
-    --lwt-sidebar-background-color: #dce0e8 !important;
-    --toolbar-bgcolor: #ccd0da !important;
-    --newtab-background-color: #eff1f5 !important;
+/* Catppuccin Latte Sky userChrome.css*/
+
+@media (prefers-color-scheme: light) {
+    
+    :root {
+        --zen-colors-primary: #ccd0da !important;
+        --zen-colors-secondary: #ccd0da !important;
+        --zen-colors-tertiary: #e6e9ef !important;
+        --zen-colors-border: #04a5e5 !important;
+        --toolbarbutton-icon-fill: #04a5e5 !important;
+        --lwt-text-color: #4c4f69 !important;
+        --toolbar-field-color: #4c4f69 !important;
+        --tab-selected-textcolor: rgb(40, 122, 167) !important;
+        --toolbar-field-focus-color: #4c4f69 !important;
+        --toolbar-color: #4c4f69 !important;
+        --newtab-text-primary-color: #4c4f69 !important;
+        --arrowpanel-color: #4c4f69 !important;
+        --arrowpanel-background: #eff1f5 !important;
+        --sidebar-text-color: #4c4f69 !important;
+        --lwt-sidebar-text-color: #4c4f69 !important;
+        --lwt-sidebar-background-color: #dce0e8 !important;
+        --toolbar-bgcolor: #ccd0da !important;
+        --newtab-background-color: #eff1f5 !important;
+    }
+
+    .sidebar-placesTree {
+        background-color: #ccd0da !important;
+    }
+
+    #zen-workspaces-button {
+        background-color: #eff1f5 !important;
+    }
+
+    #urlbar-background {
+        background-color: #eff1f5 !important;
+    }
+
+    .content-shortcuts {
+        background-color: #eff1f5 !important;
+        border-color: #04a5e5 !important;
+    }
+
+    .urlbarView-url {
+        color: #04a5e5 !important;
+    }
+
 }
-
-.sidebar-placesTree {
-    background-color: #ccd0da !important;
-}
-
-#zen-workspaces-button {
-    background-color: #eff1f5 !important;
-}
-
-#urlbar-background {
-    background-color: #eff1f5 !important;
-}
-
-.content-shortcuts {
-    background-color: #eff1f5 !important;
-    border-color: #04a5e5 !important;
-}
-
-.urlbarView-url {
-    color: #04a5e5 !important;
-}
-
-
 

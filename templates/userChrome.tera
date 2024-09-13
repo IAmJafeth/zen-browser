@@ -8,47 +8,51 @@ whiskers:
 ---
 {%- set palette = flavor.colors -%}
 
-:root {
-    --zen-colors-primary: #{{ surface0.hex }} !important;
-    --zen-colors-secondary: #{{ surface0.hex }} !important;
-    --zen-colors-tertiary: #{{ mantle.hex }} !important;
-    --zen-colors-border: #{{ palette[accent].hex }} !important;
-    --toolbarbutton-icon-fill: #{{ palette[accent].hex }} !important;
-    --lwt-text-color: #{{ text.hex }} !important;
-    --toolbar-field-color: #{{ text.hex }} !important;
-    --tab-selected-textcolor: {{ palette[accent] | mix(color=text, amount=0.5) | css_rgb}} !important;
-    --toolbar-field-focus-color: #{{ text.hex }} !important;
-    --toolbar-color: #{{ text.hex }} !important;
-    --newtab-text-primary-color: #{{ text.hex }} !important;
-    --arrowpanel-color: #{{ text.hex }} !important;
-    --arrowpanel-background: #{{ base.hex }} !important;
-    --sidebar-text-color: #{{ text.hex }} !important;
-    --lwt-sidebar-text-color: #{{ text.hex }} !important;
-    --lwt-sidebar-background-color: #{{ crust.hex }} !important;
-    --toolbar-bgcolor: #{{ surface0.hex }} !important;
-    --newtab-background-color: #{{ base.hex }} !important;
+/* Catppuccin {{flavor.identifier | capitalize}} {{accent | capitalize}} userChrome.css*/
+
+@media (prefers-color-scheme: {{ if(cond=flavor.dark, t="dark", f="light") }}) {
+    
+    :root {
+        --zen-colors-primary: #{{ surface0.hex }} !important;
+        --zen-colors-secondary: #{{ surface0.hex }} !important;
+        --zen-colors-tertiary: #{{ mantle.hex }} !important;
+        --zen-colors-border: #{{ palette[accent].hex }} !important;
+        --toolbarbutton-icon-fill: #{{ palette[accent].hex }} !important;
+        --lwt-text-color: #{{ text.hex }} !important;
+        --toolbar-field-color: #{{ text.hex }} !important;
+        --tab-selected-textcolor: {{ palette[accent] | mix(color=text, amount=0.5) | css_rgb}} !important;
+        --toolbar-field-focus-color: #{{ text.hex }} !important;
+        --toolbar-color: #{{ text.hex }} !important;
+        --newtab-text-primary-color: #{{ text.hex }} !important;
+        --arrowpanel-color: #{{ text.hex }} !important;
+        --arrowpanel-background: #{{ base.hex }} !important;
+        --sidebar-text-color: #{{ text.hex }} !important;
+        --lwt-sidebar-text-color: #{{ text.hex }} !important;
+        --lwt-sidebar-background-color: #{{ crust.hex }} !important;
+        --toolbar-bgcolor: #{{ surface0.hex }} !important;
+        --newtab-background-color: #{{ base.hex }} !important;
+    }
+
+    .sidebar-placesTree {
+        background-color: #{{ surface0.hex }} !important;
+    }
+
+    #zen-workspaces-button {
+        background-color: #{{ base.hex }} !important;
+    }
+
+    #urlbar-background {
+        background-color: #{{ base.hex }} !important;
+    }
+
+    .content-shortcuts {
+        background-color: #{{ base.hex }} !important;
+        border-color: #{{ palette[accent].hex }} !important;
+    }
+
+    .urlbarView-url {
+        color: #{{ palette[accent].hex }} !important;
+    }
+
 }
-
-.sidebar-placesTree {
-    background-color: #{{ surface0.hex }} !important;
-}
-
-#zen-workspaces-button {
-    background-color: #{{ base.hex }} !important;
-}
-
-#urlbar-background {
-    background-color: #{{ base.hex }} !important;
-}
-
-.content-shortcuts {
-    background-color: #{{ base.hex }} !important;
-    border-color: #{{ palette[accent].hex }} !important;
-}
-
-.urlbarView-url {
-    color: #{{ palette[accent].hex }} !important;
-}
-
-
 
