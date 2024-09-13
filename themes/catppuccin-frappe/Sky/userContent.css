@@ -23,7 +23,7 @@
     }
   }
 
-  @-moz-document url("about:preferences"), url("about:preferences/*") {
+  @-moz-document url-prefix("about:preferences"){
     :root{
     --zen-colors-tertiary: #292c3c !important;
     --in-content-text-color: #c6d0f5 !important;
@@ -45,7 +45,7 @@
     }
   }
 
-  @-moz-document url("about:addons") {
+  @-moz-document url-prefix("about:addons") {
     :root{
       --zen-dark-color-mix-base: #292c3c !important;
       --in-content-page-color: #c6d0f5 !important;

@@ -33,7 +33,7 @@ whiskers:
     }
   }
 
-  @-moz-document url("about:preferences"), url("about:preferences/*") {
+  @-moz-document url-prefix("about:preferences"){
     :root{
     --zen-colors-tertiary: #{{ mantle.hex }} !important;
     --in-content-text-color: #{{ text.hex }} !important;
@@ -55,7 +55,7 @@ whiskers:
     }
   }
 
-  @-moz-document url("about:addons") {
+  @-moz-document url-prefix("about:addons") {
     :root{
       --zen-dark-color-mix-base: #{{ mantle.hex }} !important;
       --in-content-page-color: #{{ text.hex }} !important;
