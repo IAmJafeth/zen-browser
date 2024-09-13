@@ -36,11 +36,11 @@
 
 ## Usage
 
-1. [Create a chrome](https://www.userchrome.org/how-create-userchrome-css.html) folder at your profile directory.
-2. Copy the `userChrome.css`, `userChrome.css`  and `zen-logo.csv` files of your favorite flavor from to your chrome folder. Files can be found at the [themes](themes/) directory of this repo.
+1. [Create a `chrome` folder](https://www.userchrome.org/how-create-userchrome-css.html) in your browser's profile directory.
+2. Copy the `userChrome.css`, `userContent.css`, and `zen-logo.svg` files of your preferred theme from the [`themes/`](themes/) directory in this repository to your `chrome` folder.
 
 > [!NOTE]
-> If you are using [🌻 Latte](themes/catppuccin-latte/) you have to setup your browser in light mode for the theme to be applied, and dark mode for [🪴 Frappé](themes/catppuccin-frappe/) , [🌺 Macchiato](themes/catppuccin-macchiato/), [🌿 Mocha](themes/catppuccin-mocha/)
+> If you're using the [🌻 Latte](themes/catppuccin-latte/) theme, set your browser to light mode. For [🪴 Frappé](themes/catppuccin-frappe/), [🌺 Macchiato](themes/catppuccin-macchiato/), or [🌿 Mocha](themes/catppuccin-mocha/), enable dark mode to apply the theme correctly.
 
 ## 💝 Thanks to
 
