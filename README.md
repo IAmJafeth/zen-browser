@@ -6,9 +6,9 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/catppuccin/zen-browser/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/tumblr?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/zen-browser/issues"><img src="https://img.shields.io/github/issues/catppuccin/tumblr?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/zen-browser/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/tumblr?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/zen-browser/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/zen-browser?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/zen-browser/issues"><img src="https://img.shields.io/github/issues/catppuccin/zen-browser?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/zen-browser/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/zen-browser?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
