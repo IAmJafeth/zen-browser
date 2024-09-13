@@ -2,6 +2,7 @@
 
 @media (prefers-color-scheme: dark) {
   @-moz-document url("about:newtab"), url("about:home") {
+    
     :root{
     --newtab-background-color: #1e1e2e !important;
     --newtab-background-color-secondary: #313244 !important;
@@ -19,7 +20,7 @@
     }
 
     .search-wrapper .logo-and-wordmark .logo {
-      background: url("zen-logo.svg") ,image-set(url("chrome://branding/content/about-logo.png"), url("chrome://branding/content/about-logo@2x.png") 2x) no-repeat center !important;
+      background: url("zen-logo-mocha.svg") ,image-set(url("chrome://branding/content/about-logo.png"), url("chrome://branding/content/about-logo@2x.png") 2x) no-repeat center !important;
       display: inline-block !important;
       height: 82px !important;
       width: 82px !important;
@@ -31,8 +32,11 @@
         background-size: 64px !important;
         height: 64px !important;
         width: 64px !important;
+      }
     }
+
   }
+  
 
   @-moz-document url-prefix("about:preferences"){
     :root{
@@ -66,4 +70,6 @@
     }
   }
 }
+
+
 

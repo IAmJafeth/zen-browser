@@ -4,7 +4,7 @@ whiskers:
     matrix:
         - accent
         - flavor
-    filename: "themes/catppuccin-{{ flavor.identifier }}/{{ accent | capitalize }}/zen-logo.svg"
+    filename: "themes/catppuccin-{{ flavor.identifier }}/{{ accent | capitalize }}/zen-logo-{{ flavor.identifier }}.svg"
 ---
 {%- set palette = flavor.colors -%}
 
