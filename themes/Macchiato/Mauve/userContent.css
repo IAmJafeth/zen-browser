@@ -1,0 +1,87 @@
+/* Catppuccin Macchiato Mauve userContent.css*/
+
+@media (prefers-color-scheme: dark) {
+  @-moz-document url("about:newtab"), url("about:home") {
+    
+    :root{
+    --newtab-background-color: #24273a !important;
+    --newtab-background-color-secondary: #363a4f !important;
+    --newtab-element-hover-color: #363a4f !important;
+    --newtab-text-primary-color: #cad3f5 !important;
+    --newtab-wordmark-color: #cad3f5 !important;
+    }
+    
+    .icon{
+    color: #c6a0f6 !important;
+    }
+    
+    body { 
+    background-color: #24273a !important;
+    }
+
+    .search-wrapper .logo-and-wordmark .logo {
+      background: url("zen-logo-macchiato.svg") , url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/Macchiato/Mauve/zen-logo-macchiato.svg") no-repeat center !important;
+      display: inline-block !important;
+      height: 82px !important;
+      width: 82px !important;
+      background-size: 82px !important;
+    }
+    
+    @media (max-width: 609px) {
+      .search-wrapper .logo-and-wordmark .logo {
+        background-size: 64px !important;
+        height: 64px !important;
+        width: 64px !important;
+      }
+    }
+
+    .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title{
+      color: #c6a0f6 !important;
+    }
+
+    .top-site-outer .search-topsite{
+      background-color: #8aadf4 !important;
+    }
+
+    .compact-cards .card-outer .card-context .card-context-icon.icon-download{
+      fill: #a6da95 !important;
+    }
+
+  }
+  
+
+  @-moz-document url-prefix("about:preferences"){
+    :root{
+    --zen-colors-tertiary: #1e2030 !important;
+    --in-content-text-color: #cad3f5 !important;
+    --link-color: #c6a0f6 !important;
+    --link-color-hover: rgb(242, 160, 246) !important;
+    }
+    
+    groupbox{
+    background: #24273a !important;
+    }
+    
+    groupbox button, groupbox menulist {
+    background: #363a4f !important;
+    color: #cad3f5 !important;
+    }
+    
+    .main-content{
+    background-color: #181926 !important;
+    }
+  }
+
+  @-moz-document url-prefix("about:addons") {
+    :root{
+      --zen-dark-color-mix-base: #1e2030 !important;
+      --in-content-page-color: #cad3f5 !important;
+      --background-color-box: #24273a !important;
+      --color-accent-primary: #c6a0f6 !important;
+      --color-accent-primary-hover: rgb(242, 160, 246) !important;
+    }
+  }
+}
+
+
+
