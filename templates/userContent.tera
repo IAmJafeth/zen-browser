@@ -8,7 +8,7 @@ whiskers:
 ---
 {%- set palette = flavor.colors -%}
 
-/* Catppuccin {{flavor.identifier | capitalize}} {{accent | capitalize}} userCotent.css*/
+/* Catppuccin {{flavor.identifier | capitalize}} {{accent | capitalize}} userContent.css*/
 
 @media (prefers-color-scheme: {{ if(cond=flavor.dark, t="dark", f="light") }}) {
   @-moz-document url("about:newtab"), url("about:home") {
