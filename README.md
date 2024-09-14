@@ -46,32 +46,11 @@
 
 - **Q:** What if I already have a `userChrome.css` and/or `userContent.css` configuration?
   
-  **A:** You have two options:
-  
-  1. Copy and paste the content of our `userChrome.css` and/or `userContent.css` files into your existing ones.
-  2. Alternatively, you can import them directly by adding the following lines to your existing files:
-  
-     **For `userChrome.css`:**
-     ```css
-     /* Latte Pink */
-     @import url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/Latte/Pink/userChrome.css");
-
-     /* Mocha Mauve */
-     @import url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/Mocha/Mauve/userChrome.css");
-     ```
-
-     **For `userContent.css`:**
-     ```css
-     /* Latte Pink */
-     @import url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/Latte/Pink/userContent.css");
-
-     /* Mocha Mauve */
-     @import url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/Mocha/Mauve/userContent.css");
-     ```
+  **A:** You can copy and paste the content of our `userChrome.css` and/or `userContent.css` files into your existing ones. This way, you can keep your current configurations while applying the new theme settings.
 
 - **Q:** Can I automatically switch flavors between light and dark mode?
   
-  **A:** Yes! You can concatenate or import the `userChrome.css` and `userContent.css` files for 🌻 Latte (light mode) along with one of the dark mode themes like 🪴 Frappé, 🌺 Macchiato, or 🌿 Mocha. The browser will automatically switch between these themes when toggling between light and dark mode.
+  **A:** Yes! You can concatenate the `userChrome.css` and `userContent.css` files for 🌻 Latte (light mode) along with one of the dark mode themes like 🪴 Frappé, 🌺 Macchiato, or 🌿 Mocha. The browser will automatically switch between these themes when toggling between light and dark mode.
 
 ## 💝 Thanks to
 
