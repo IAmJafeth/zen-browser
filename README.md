@@ -40,7 +40,38 @@
 2. Copy the `userChrome.css`, `userContent.css`, and `zen-logo.svg` files of your preferred theme from the [`themes/`](themes/) directory in this repository to your `chrome` folder.
 
 > [!NOTE]
-> If you're using the [🌻 Latte](themes/catppuccin-latte/) theme, set your browser to light mode. For [🪴 Frappé](themes/catppuccin-frappe/), [🌺 Macchiato](themes/catppuccin-macchiato/), or [🌿 Mocha](themes/catppuccin-mocha/), enable dark mode to apply the theme correctly.
+> If you're using the [🌻 Latte](themes/Latte/) theme, set your browser to light mode. For [🪴 Frappé](themes/Frappe/), [🌺 Macchiato](themes/Macchiato/), or [🌿 Mocha](themes/Mocha/), enable dark mode to apply the theme correctly.
+
+## 🙋 FAQ
+
+- **Q:** What if I already have a `userChrome.css` and/or `userContent.css` configuration?
+  
+  **A:** You have two options:
+  
+  1. Copy and paste the content of our `userChrome.css` and/or `userContent.css` files into your existing ones.
+  2. Alternatively, you can import them directly by adding the following lines to your existing files:
+  
+     **For `userChrome.css`:**
+     ```css
+     /* Latte Pink */
+     @import url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/Latte/Pink/userChrome.css");
+
+     /* Mocha Mauve */
+     @import url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/Mocha/Mauve/userChrome.css");
+     ```
+
+     **For `userContent.css`:**
+     ```css
+     /* Latte Pink */
+     @import url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/Latte/Pink/userContent.css");
+
+     /* Mocha Mauve */
+     @import url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/Mocha/Mauve/userContent.css");
+     ```
+
+- **Q:** Can I automatically switch flavors between light and dark mode?
+  
+  **A:** Yes! You can concatenate or import the `userChrome.css` and `userContent.css` files for 🌻 Latte (light mode) along with one of the dark mode themes like 🪴 Frappé, 🌺 Macchiato, or 🌿 Mocha. The browser will automatically switch between these themes when toggling between light and dark mode.
 
 ## 💝 Thanks to
 
