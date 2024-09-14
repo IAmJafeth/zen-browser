@@ -36,7 +36,7 @@
 
 ## Usage
 
-1. [Create a `chrome` folder](https://www.userchrome.org/how-create-userchrome-css.html) in your browser's profile directory.
+1. [Create a `chrome` folder](https://www.userchrome.org/how-create-userchrome-css.html) in your Zen Browser's profile directory.
 2. Copy the `userChrome.css`, `userContent.css`, and `zen-logo.svg` files of your preferred theme from the [`themes/`](themes/) directory in this repository to your `chrome` folder.
 
 > [!NOTE]
