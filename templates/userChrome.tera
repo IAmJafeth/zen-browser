@@ -41,6 +41,10 @@ whiskers:
         background-color: #{{ base.hex }} !important;
     }
 
+    #TabsToolbar {
+        background-color: #{{ mantle.hex }} !important;
+    }
+
     #urlbar-background {
         background-color: #{{ base.hex }} !important;
     }
