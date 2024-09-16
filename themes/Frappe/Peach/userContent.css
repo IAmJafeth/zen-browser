@@ -2,7 +2,7 @@
 
 @media (prefers-color-scheme: dark) {
   @-moz-document url("about:newtab"), url("about:home") {
-    
+
     :root{
     --newtab-background-color: #303446 !important;
     --newtab-background-color-secondary: #414559 !important;
@@ -10,12 +10,12 @@
     --newtab-text-primary-color: #c6d0f5 !important;
     --newtab-wordmark-color: #c6d0f5 !important;
     }
-    
+
     .icon{
     color: #ef9f76 !important;
     }
-    
-    body { 
+
+    body {
     background-color: #303446 !important;
     }
 
@@ -26,7 +26,7 @@
       width: 82px !important;
       background-size: 82px !important;
     }
-    
+
     @media (max-width: 609px) {
       .search-wrapper .logo-and-wordmark .logo {
         background-size: 64px !important;
@@ -48,7 +48,7 @@
     }
 
   }
-  
+
 
   @-moz-document url-prefix("about:preferences"){
     :root{
@@ -56,17 +56,19 @@
     --in-content-text-color: #c6d0f5 !important;
     --link-color: #ef9f76 !important;
     --link-color-hover: rgb(239, 219, 119) !important;
+    --color-accent-primary: #ef9f76 !important;
+    --color-accent-primary-hover: rgb(239, 219, 119) !important;
     }
-    
+
     groupbox{
     background: #303446 !important;
     }
-    
+
     groupbox button, groupbox menulist {
     background: #414559 !important;
     color: #c6d0f5 !important;
     }
-    
+
     .main-content{
     background-color: #232634 !important;
     }
@@ -82,6 +84,3 @@
     }
   }
 }
-
-
-

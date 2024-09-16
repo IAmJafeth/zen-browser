@@ -12,7 +12,7 @@ whiskers:
 
 @media (prefers-color-scheme: {{ if(cond=flavor.dark, t="dark", f="light") }}) {
   @-moz-document url("about:newtab"), url("about:home") {
-    
+
     :root{
     --newtab-background-color: #{{ base.hex }} !important;
     --newtab-background-color-secondary: #{{ surface0.hex }} !important;
@@ -20,12 +20,12 @@ whiskers:
     --newtab-text-primary-color: #{{ text.hex }} !important;
     --newtab-wordmark-color: #{{ text.hex }} !important;
     }
-    
+
     .icon{
     color: #{{ palette[accent].hex }} !important;
     }
-    
-    body { 
+
+    body {
     background-color: #{{ base.hex }} !important;
     }
 
@@ -36,7 +36,7 @@ whiskers:
       width: 82px !important;
       background-size: 82px !important;
     }
-    
+
     @media (max-width: 609px) {
       .search-wrapper .logo-and-wordmark .logo {
         background-size: 64px !important;
@@ -58,7 +58,7 @@ whiskers:
     }
 
   }
-  
+
 
   @-moz-document url-prefix("about:preferences"){
     :root{
@@ -66,17 +66,19 @@ whiskers:
     --in-content-text-color: #{{ text.hex }} !important;
     --link-color: #{{ palette[accent].hex }} !important;
     --link-color-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
+    --color-accent-primary: #{{ palette[accent].hex }} !important;
+    --color-accent-primary-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
     }
-    
+
     groupbox{
     background: #{{ base.hex }} !important;
     }
-    
+
     groupbox button, groupbox menulist {
     background: #{{ surface0.hex }} !important;
     color: #{{ text.hex }} !important;
     }
-    
+
     .main-content{
     background-color: #{{ crust.hex }} !important;
     }
@@ -92,6 +94,3 @@ whiskers:
     }
   }
 }
-
-
-
