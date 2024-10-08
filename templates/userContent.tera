@@ -68,6 +68,7 @@ whiskers:
     --link-color-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
     --color-accent-primary: #{{ palette[accent].hex }} !important;
     --color-accent-primary-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
+    --zen-colors-primary: #{{ surface0.hex }} !important;
     }
 
     groupbox{
