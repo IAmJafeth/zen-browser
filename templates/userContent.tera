@@ -69,6 +69,10 @@ whiskers:
     --color-accent-primary: #{{ palette[accent].hex }} !important;
     --color-accent-primary-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
     --zen-colors-primary: #{{ surface0.hex }} !important;
+    --in-content-page-color: #{{ text.hex }} !important;
+    --in-content-box-background: #{{ surface0.hex }} !important;
+    --zen-primary-color: #{{ palette[accent].hex }} !important;
+
     }
 
     groupbox{

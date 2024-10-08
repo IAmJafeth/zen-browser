@@ -59,6 +59,10 @@
     --color-accent-primary: #91d7e3 !important;
     --color-accent-primary-hover: rgb(145, 174, 227) !important;
     --zen-colors-primary: #363a4f !important;
+    --in-content-page-color: #cad3f5 !important;
+    --in-content-box-background: #363a4f !important;
+    --zen-primary-color: #91d7e3 !important;
+
     }
 
     groupbox{
