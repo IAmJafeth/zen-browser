@@ -4,6 +4,7 @@
 
     :root {
         --zen-colors-primary: #313244 !important;
+        --zen-primary-color: #cba6f7 !important;
         --zen-colors-secondary: #313244 !important;
         --zen-colors-tertiary: #181825 !important;
         --zen-colors-border: #cba6f7 !important;

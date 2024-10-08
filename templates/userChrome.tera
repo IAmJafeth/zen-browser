@@ -14,6 +14,7 @@ whiskers:
 
     :root {
         --zen-colors-primary: #{{ surface0.hex }} !important;
+        --zen-primary-color: #{{ palette[accent].hex }} !important;
         --zen-colors-secondary: #{{ surface0.hex }} !important;
         --zen-colors-tertiary: #{{ mantle.hex }} !important;
         --zen-colors-border: #{{ palette[accent].hex }} !important;
