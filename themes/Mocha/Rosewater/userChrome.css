@@ -1,7 +1,7 @@
 /* Catppuccin Mocha Rosewater userChrome.css*/
 
 @media (prefers-color-scheme: dark) {
-    
+
     :root {
         --zen-colors-primary: #313244 !important;
         --zen-colors-secondary: #313244 !important;
@@ -21,6 +21,7 @@
         --lwt-sidebar-background-color: #11111b !important;
         --toolbar-bgcolor: #313244 !important;
         --newtab-background-color: #1e1e2e !important;
+        --zen-themed-toolbar-bg: #181825 !important;
     }
 
     .sidebar-placesTree {
@@ -49,4 +50,3 @@
     }
 
 }
-

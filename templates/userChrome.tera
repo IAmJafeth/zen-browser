@@ -11,7 +11,7 @@ whiskers:
 /* Catppuccin {{flavor.identifier | capitalize}} {{accent | capitalize}} userChrome.css*/
 
 @media (prefers-color-scheme: {{ if(cond=flavor.dark, t="dark", f="light") }}) {
-    
+
     :root {
         --zen-colors-primary: #{{ surface0.hex }} !important;
         --zen-colors-secondary: #{{ surface0.hex }} !important;
@@ -31,6 +31,7 @@ whiskers:
         --lwt-sidebar-background-color: #{{ crust.hex }} !important;
         --toolbar-bgcolor: #{{ surface0.hex }} !important;
         --newtab-background-color: #{{ base.hex }} !important;
+        --zen-themed-toolbar-bg: #{{ mantle.hex }} !important;
     }
 
     .sidebar-placesTree {
@@ -59,4 +60,3 @@ whiskers:
     }
 
 }
-

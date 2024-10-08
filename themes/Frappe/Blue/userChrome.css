@@ -1,7 +1,7 @@
 /* Catppuccin Frappe Blue userChrome.css*/
 
 @media (prefers-color-scheme: dark) {
-    
+
     :root {
         --zen-colors-primary: #414559 !important;
         --zen-colors-secondary: #414559 !important;
@@ -21,6 +21,7 @@
         --lwt-sidebar-background-color: #232634 !important;
         --toolbar-bgcolor: #414559 !important;
         --newtab-background-color: #303446 !important;
+        --zen-themed-toolbar-bg: #292c3c !important;
     }
 
     .sidebar-placesTree {
@@ -49,4 +50,3 @@
     }
 
 }
-

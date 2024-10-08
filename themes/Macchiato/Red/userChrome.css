@@ -1,7 +1,7 @@
 /* Catppuccin Macchiato Red userChrome.css*/
 
 @media (prefers-color-scheme: dark) {
-    
+
     :root {
         --zen-colors-primary: #363a4f !important;
         --zen-colors-secondary: #363a4f !important;
@@ -21,6 +21,7 @@
         --lwt-sidebar-background-color: #181926 !important;
         --toolbar-bgcolor: #363a4f !important;
         --newtab-background-color: #24273a !important;
+        --zen-themed-toolbar-bg: #1e2030 !important;
     }
 
     .sidebar-placesTree {
@@ -49,4 +50,3 @@
     }
 
 }
-

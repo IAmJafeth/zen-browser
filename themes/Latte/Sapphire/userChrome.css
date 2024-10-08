@@ -1,7 +1,7 @@
 /* Catppuccin Latte Sapphire userChrome.css*/
 
 @media (prefers-color-scheme: light) {
-    
+
     :root {
         --zen-colors-primary: #ccd0da !important;
         --zen-colors-secondary: #ccd0da !important;
@@ -21,6 +21,7 @@
         --lwt-sidebar-background-color: #dce0e8 !important;
         --toolbar-bgcolor: #ccd0da !important;
         --newtab-background-color: #eff1f5 !important;
+        --zen-themed-toolbar-bg: #e6e9ef !important;
     }
 
     .sidebar-placesTree {
@@ -49,4 +50,3 @@
     }
 
 }
-
