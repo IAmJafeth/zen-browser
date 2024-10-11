@@ -25,6 +25,10 @@
         --zen-themed-toolbar-bg: #e6e9ef !important;
     }
 
+    #permissions-granted-icon{
+      color: #e6e9ef !important;
+    }
+
     .sidebar-placesTree {
         background-color: #ccd0da !important;
     }

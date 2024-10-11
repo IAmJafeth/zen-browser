@@ -35,6 +35,10 @@ whiskers:
         --zen-themed-toolbar-bg: #{{ mantle.hex }} !important;
     }
 
+    #permissions-granted-icon{
+      color: #{{ mantle.hex }} !important;
+    }
+
     .sidebar-placesTree {
         background-color: #{{ surface0.hex }} !important;
     }
