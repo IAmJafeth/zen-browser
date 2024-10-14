@@ -11,26 +11,35 @@ whiskers:
 /* Catppuccin {{flavor.identifier | capitalize}} {{accent | capitalize}} userContent.css*/
 
 @media (prefers-color-scheme: {{ if(cond=flavor.dark, t="dark", f="light") }}) {
+
+  /* Common variables affecting all pages */
+  @-moz-document url-prefix("about:") {
+    :root {
+      --in-content-page-color: #{{ text.hex }} !important;
+      --color-accent-primary: #{{ palette[accent].hex }} !important;
+      --color-accent-primary-hover: {{ palette[accent] | add(hue=30) | css_rgb }} !important;
+      background-color: #{{ base.hex }} !important;
+    }
+
+  }
+
+  /* Variables and styles specific to about:newtab and about:home */
   @-moz-document url("about:newtab"), url("about:home") {
 
-    :root{
-    --newtab-background-color: #{{ base.hex }} !important;
-    --newtab-background-color-secondary: #{{ surface0.hex }} !important;
-    --newtab-element-hover-color: #{{ surface0.hex }} !important;
-    --newtab-text-primary-color: #{{ text.hex }} !important;
-    --newtab-wordmark-color: #{{ text.hex }} !important;
+    :root {
+      --newtab-background-color: #{{ base.hex }} !important;
+      --newtab-background-color-secondary: #{{ surface0.hex }} !important;
+      --newtab-element-hover-color: #{{ surface0.hex }} !important;
+      --newtab-text-primary-color: #{{ text.hex }} !important;
+      --newtab-wordmark-color: #{{ text.hex }} !important;
     }
 
-    .icon{
-    color: #{{ palette[accent].hex }} !important;
-    }
-
-    body {
-    background-color: #{{ base.hex }} !important;
+    .icon {
+      color: #{{ palette[accent].hex }} !important;
     }
 
     .search-wrapper .logo-and-wordmark .logo {
-      background: url("zen-logo-{{ flavor.identifier }}.svg") , url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/{{ flavor.identifier | capitalize}}/{{ accent | capitalize }}/zen-logo-{{ flavor.identifier }}.svg") no-repeat center !important;
+      background: url("zen-logo-{{ flavor.identifier }}.svg"), url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/{{ flavor.identifier | capitalize}}/{{ accent | capitalize }}/zen-logo-{{ flavor.identifier }}.svg") no-repeat center !important;
       display: inline-block !important;
       height: 82px !important;
       width: 82px !important;
@@ -45,57 +54,73 @@ whiskers:
       }
     }
 
-    .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title{
+    .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title {
       color: #{{ palette[accent].hex }} !important;
     }
 
-    .top-site-outer .search-topsite{
+    .top-site-outer .search-topsite {
       background-color: #{{ blue.hex }} !important;
     }
 
-    .compact-cards .card-outer .card-context .card-context-icon.icon-download{
+    .compact-cards .card-outer .card-context .card-context-icon.icon-download {
       fill: #{{ green.hex }} !important;
     }
-
   }
 
-
-  @-moz-document url-prefix("about:preferences"){
-    :root{
-    --zen-colors-tertiary: #{{ mantle.hex }} !important;
-    --in-content-text-color: #{{ text.hex }} !important;
-    --link-color: #{{ palette[accent].hex }} !important;
-    --link-color-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
-    --color-accent-primary: #{{ palette[accent].hex }} !important;
-    --color-accent-primary-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
-    --zen-colors-primary: #{{ surface0.hex }} !important;
-    --in-content-page-color: #{{ text.hex }} !important;
-    --in-content-box-background: #{{ surface0.hex }} !important;
-    --zen-primary-color: #{{ palette[accent].hex }} !important;
-
+  /* Variables and styles specific to about:preferences */
+  @-moz-document url-prefix("about:preferences") {
+    :root {
+      --zen-colors-tertiary: #{{ mantle.hex }} !important;
+      --in-content-text-color: #{{ text.hex }} !important;
+      --link-color: #{{ palette[accent].hex }} !important;
+      --link-color-hover: {{ palette[accent] | add(hue=30) | css_rgb }} !important;
+      --zen-colors-primary: #{{ surface0.hex }} !important;
+      --in-content-box-background: #{{ surface0.hex }} !important;
+      --zen-primary-color: #{{ palette[accent].hex }} !important;
     }
 
-    groupbox{
-    background: #{{ base.hex }} !important;
+    groupbox {
+      background: #{{ base.hex }} !important;
     }
 
-    groupbox button, groupbox menulist {
-    background: #{{ surface0.hex }} !important;
-    color: #{{ text.hex }} !important;
+    groupbox button,
+    groupbox menulist {
+      background: #{{ surface0.hex }} !important;
+      color: #{{ text.hex }} !important;
     }
 
-    .main-content{
-    background-color: #{{ crust.hex }} !important;
+    .main-content {
+      background-color: #{{ crust.hex }} !important;
     }
   }
 
+  /* Variables and styles specific to about:addons */
   @-moz-document url-prefix("about:addons") {
-    :root{
+    :root {
       --zen-dark-color-mix-base: #{{ mantle.hex }} !important;
-      --in-content-page-color: #{{ text.hex }} !important;
       --background-color-box: #{{ base.hex }} !important;
-      --color-accent-primary: #{{ palette[accent].hex }} !important;
-      --color-accent-primary-hover: {{ palette[accent] | add(hue=30) | css_rgb}} !important;
+    }
+  }
+
+  /* Variables and styles specific to about:protections */
+  @-moz-document url-prefix("about:protections") {
+    :root {
+      --zen-primary-color: #{{ base.hex }} !important;
+      --social-color: #{{ mauve.hex }} !important;
+      --coockie-color: #{{ sky.hex }} !important;
+      --fingerprinter-color: #{{ yellow.hex }} !important;
+      --cryptominer-color: #{{ lavender.hex }} !important;
+      --tracker-color: #{{ green.hex }} !important;
+      --in-content-primary-button-background-hover: {{ surface1 | add(hue=30) | css_rgb }} !important;
+      --in-content-primary-button-text-color-hover: #{{ text.hex }} !important;
+      --in-content-primary-button-background: #{{ surface1.hex }} !important;
+      --in-content-primary-button-text-color: #{{ text.hex }} !important;
+    }
+
+
+    .card {
+      background-color: #{{ surface0.hex }} !important;
     }
   }
 }
+
