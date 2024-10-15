@@ -17,7 +17,8 @@ whiskers:
     :root {
       --in-content-page-color: #{{ text.hex }} !important;
       --color-accent-primary: #{{ palette[accent].hex }} !important;
-      --color-accent-primary-hover: {{ palette[accent] | add(hue=30) | css_rgb }} !important;
+      --color-accent-primary-hover: {{ palette[accent] | add(lightness=5) | css_rgb }} !important;
+      --color-accent-primary-active: {{ palette[accent] | add(hue=15) | css_rgb}} !important; 
       background-color: #{{ base.hex }} !important;
     }
 
@@ -73,7 +74,7 @@ whiskers:
       --zen-colors-tertiary: #{{ mantle.hex }} !important;
       --in-content-text-color: #{{ text.hex }} !important;
       --link-color: #{{ palette[accent].hex }} !important;
-      --link-color-hover: {{ palette[accent] | add(hue=30) | css_rgb }} !important;
+      --link-color-hover: {{ palette[accent] | add(lightness=5) | css_rgb }} !important;
       --zen-colors-primary: #{{ surface0.hex }} !important;
       --in-content-box-background: #{{ surface0.hex }} !important;
       --zen-primary-color: #{{ palette[accent].hex }} !important;
@@ -111,7 +112,7 @@ whiskers:
       --fingerprinter-color: #{{ yellow.hex }} !important;
       --cryptominer-color: #{{ lavender.hex }} !important;
       --tracker-color: #{{ green.hex }} !important;
-      --in-content-primary-button-background-hover: {{ surface1 | add(hue=30) | css_rgb }} !important;
+      --in-content-primary-button-background-hover: {{ surface1 | add(lightness=5) | css_rgb }} !important;
       --in-content-primary-button-text-color-hover: #{{ text.hex }} !important;
       --in-content-primary-button-background: #{{ surface1.hex }} !important;
       --in-content-primary-button-text-color: #{{ text.hex }} !important;
@@ -123,4 +124,3 @@ whiskers:
     }
   }
 }
-

@@ -7,7 +7,8 @@
     :root {
       --in-content-page-color: #4c4f69 !important;
       --color-accent-primary: #8839ef !important;
-      --color-accent-primary-hover: rgb(227, 57, 239) !important;
+      --color-accent-primary-hover: rgb(150, 81, 241) !important;
+      --color-accent-primary-active: rgb(181, 57, 239) !important; 
       background-color: #eff1f5 !important;
     }
 
@@ -63,7 +64,7 @@
       --zen-colors-tertiary: #e6e9ef !important;
       --in-content-text-color: #4c4f69 !important;
       --link-color: #8839ef !important;
-      --link-color-hover: rgb(227, 57, 239) !important;
+      --link-color-hover: rgb(150, 81, 241) !important;
       --zen-colors-primary: #ccd0da !important;
       --in-content-box-background: #ccd0da !important;
       --zen-primary-color: #8839ef !important;
@@ -101,7 +102,7 @@
       --fingerprinter-color: #df8e1d !important;
       --cryptominer-color: #7287fd !important;
       --tracker-color: #40a02b !important;
-      --in-content-primary-button-background-hover: rgb(192, 188, 204) !important;
+      --in-content-primary-button-background-hover: rgb(203, 206, 215) !important;
       --in-content-primary-button-text-color-hover: #4c4f69 !important;
       --in-content-primary-button-background: #bcc0cc !important;
       --in-content-primary-button-text-color: #4c4f69 !important;
@@ -113,4 +114,3 @@
     }
   }
 }
-
