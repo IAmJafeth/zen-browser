@@ -10,6 +10,7 @@
       --color-accent-primary-hover: rgb(251, 243, 241) !important;
       --color-accent-primary-active: rgb(245, 231, 221) !important; 
       background-color: #1e1e2e !important;
+      --in-content-page-background: #1e1e2e !important;
     }
 
   }

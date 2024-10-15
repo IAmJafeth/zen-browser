@@ -20,6 +20,7 @@ whiskers:
       --color-accent-primary-hover: {{ palette[accent] | add(lightness=5) | css_rgb }} !important;
       --color-accent-primary-active: {{ palette[accent] | add(hue=15) | css_rgb}} !important; 
       background-color: #{{ base.hex }} !important;
+      --in-content-page-background: #{{ base.hex }} !important;
     }
 
   }
