@@ -81,11 +81,11 @@ whiskers:
       --zen-primary-color: #{{ palette[accent].hex }} !important;
     }
 
-    groupbox {
+    groupbox , moz-card{
       background: #{{ base.hex }} !important;
     }
 
-    groupbox button,
+    button,
     groupbox menulist {
       background: #{{ surface0.hex }} !important;
       color: #{{ text.hex }} !important;

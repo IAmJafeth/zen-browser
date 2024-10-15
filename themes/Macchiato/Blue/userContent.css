@@ -71,11 +71,11 @@
       --zen-primary-color: #8aadf4 !important;
     }
 
-    groupbox {
+    groupbox , moz-card{
       background: #24273a !important;
     }
 
-    groupbox button,
+    button,
     groupbox menulist {
       background: #363a4f !important;
       color: #cad3f5 !important;
